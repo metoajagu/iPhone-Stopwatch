@@ -1,0 +1,77 @@
+body{
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: lighter;
+  background-color: black;
+  color:white;
+}
+
+.stop-watch-time{
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.stopwatch-buttons{
+  display: flex;
+  justify-content: center;
+  border-bottom:thin;
+  border-color:rgb(19, 19, 19);
+  border-bottom-style:solid;
+  
+}
+
+.lap-button,
+.start-button,
+.stop-button{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.lap-button:hover,
+.start-button:hover,
+.stop-button:hover{
+  opacity: 0.5;  
+
+}
+
+.lap-button{
+  margin-right: 30px;
+  background-color: rgb(21, 21, 21);
+  color: rgb(135, 132, 132);
+  font-family:'SF Pro Display', sans-serif;
+  font-weight:normal;
+}
+
+.lap-button-on{
+  background-color: rgb(38, 38, 38);
+}
+
+.start-button,
+.stop-button{
+  margin-left: 70px;
+  font-family:'SF Pro Display', sans-serif;
+  font-weight:400;
+  background-color: rgb(0, 28, 0);
+  color:rgb(60, 155, 60);
+}
+
+.stop-button{
+  font-family:'SF Pro Display', sans-serif;
+  font-weight:400;
+  background-color: rgb(48, 0, 0);
+  color:rgb(155, 60, 60);
+}
+
+.lap-times{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.js-lap-time{
+display: flex;
+justify-content: end;
+}
